@@ -1,12 +1,15 @@
+using Microsoft.EntityFrameworkCore;
 using StudentPortal.Data;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//Add Dbcontext
-builder.Services.AddDbContext<ApplicationDbContext>
+//Inject(Add) Dbcontext
+builder.Services.AddDbContext<ApplicationDbContext>(options => 
+options.UseSqlServer(builder.Configuration.GetConnectionString("StudentPortal"))); //key name in appsetting.json file is "StudentPortal"
 
 var app = builder.Build();
 

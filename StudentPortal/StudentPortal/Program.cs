@@ -1,7 +1,12 @@
+using StudentPortal.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//Add Dbcontext
+builder.Services.AddDbContext<ApplicationDbContext>
 
 var app = builder.Build();
 

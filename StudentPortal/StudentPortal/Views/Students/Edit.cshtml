@@ -10,7 +10,7 @@
 
 @if (Model is null)
 {
-    <p> No Students was found ></p>
+    <p> No Students was found </p>
 }
 
 else
@@ -45,6 +45,9 @@ else
 
         <div class="mt-3">
             <button type="submit" class="btn btn-primary">Update</button>
+            <button type="submit" class="btn btn-outline-danger ms-3"
+            asp-action="Delete"
+            asp-controller="Students"> Delete </button>
         </div>
     </form>
 }

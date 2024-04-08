@@ -30,12 +30,22 @@ Before running the project locally, ensure you have the following installed:
 
 4.  Set up the database using Entity Framework Core migrations:
 
-```bash
-# Open Package Manager Console
+## Open Package Manager Console
 Tools > NuGet Package Manager > Package Manager Console
 
-# Run migration commands
+## Run migration commands
 Add-Migration "InitialMigration"
 Update-Database  # for database synchronization
 
- Build and run the application using Visual Studio. 
+Build and run the application using Visual Studio.
+
+
+
+# 2. NpWalkz
+<br>
+
+
+
+
+   ![image](https://github.com/prashannastha7/ASP.Net-Projects/assets/92351587/4cd42851-1b7c-432c-b9fd-c832df464a4a)
+

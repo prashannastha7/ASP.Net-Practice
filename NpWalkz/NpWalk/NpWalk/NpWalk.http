@@ -1,4 +1,4 @@
-@NpWalk_HostAddress = http://localhost:5071
+@NpWalk_HostAddress = http://localhost:5264
 
 GET {{NpWalk_HostAddress}}/weatherforecast/
 Accept: application/json

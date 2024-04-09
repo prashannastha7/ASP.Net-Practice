@@ -8,8 +8,10 @@
         public string? WalkImageUrl { get; set; } //? is used to make nullable
         public Guid DifficultyId{ get; set; }
         public Guid RegionId{ get; set; }
+
+
+        //Navigation properties
+        public required Difficulty Difficulty { get; set; }
+        public required Region Region{ get; set; }
     }
-
-    //Navigation properties
-
 }

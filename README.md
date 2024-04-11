@@ -42,9 +42,34 @@ Build and run the application using Visual Studio.
 
 
 # 2. NpWalkz
+   NpWalkz is a project developed to practice building RESTful APIs using ASP.NET Web API templates. This project serves as an educational exercise to understand how to create and implement web APIs with the ASP.NET framework.
+
+## Overview
+
+The purpose of NpWalkz is to provide a basic implementation of a RESTful API for managing walk entries. Users can perform (Create, Read) operations on region records, including details such as image, location.
+
+## Technologies Used
+
+- **ASP.NET Web API**: The framework for building HTTP services that can reach a broad range of clients, including browsers and mobile devices.
+- **C#**: The programming language used for backend development within the ASP.NET framework.
+- **Entity Framework**: An ORM (Object-Relational Mapping) framework for .NET used to interact with the database.
+- **SQL Server**: A relational database management system used for data storage.
+  
+## Installation and Setup
+
+To run this ASP.NET Web API project locally, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone(https://github.com/prashannastha7/ASP.Net-Projects/tree/main/NpWalkz/NpWalks)
 <br>
 
+### API Endpoints
+The following API endpoints are available:
 
+GET /api/regions: Get all regions.
+GET /api/region/{id}: Get a specific region by ID.
+POST /api/region: Create a new region entry.
 
 
    ![image](https://github.com/prashannastha7/ASP.Net-Projects/assets/92351587/4cd42851-1b7c-432c-b9fd-c832df464a4a)

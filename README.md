@@ -67,9 +67,9 @@ To run this ASP.NET Web API project locally, follow these steps:
 ### API Endpoints
 The following API endpoints are available:
 
-GET /api/regions: Get all regions.
-GET /api/region/{id}: Get a specific region by ID.
-POST /api/region: Create a new region entry.
+- GET /api/regions: Get all regions. <br>
+- GET /api/region/{id}: Get a specific region by ID. <br>
+- POST /api/region: Create a new region entry.
 
 
    ![image](https://github.com/prashannastha7/ASP.Net-Projects/assets/92351587/4cd42851-1b7c-432c-b9fd-c832df464a4a)

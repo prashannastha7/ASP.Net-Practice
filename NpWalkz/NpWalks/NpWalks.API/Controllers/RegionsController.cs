@@ -64,7 +64,7 @@ namespace NpWalks.API.Controllers
         }
 
         //Get Single region: Get:https://localhost:portno/api/regions/{id}
-
+        
         [HttpGet]
         [Route("{id}")]
 
@@ -91,6 +91,35 @@ namespace NpWalks.API.Controllers
             return Ok(regionDto);
         }
 
+
+        //POST: to create new regions
+        [HttpPost]
+        public IActionResult Create([FromBody]AddRegionDto addRegionDto)
+        {
+            //Map DTO to Domain model
+            var regionDomain = new Region
+            {
+                Name = addRegionDto.Name,
+                Code = addRegionDto.Code,
+                RegionImageUrl = addRegionDto.RegionImageUrl
+            };
+
+            //Use Domain Model to create Region
+            dbContext.Regions.Add(regionDomain);
+            dbContext.SaveChanges();
+
+            //Map Domainmodel back to dto
+            var regionDto = new RegionDto
+            {
+                Id = regionDomain.Id,
+                Name = regionDomain.Name,
+                Code = regionDomain.Code,
+                RegionImageUrl = regionDomain.RegionImageUrl
+            };
+
+            return CreatedAtAction(nameof(GetById), new { id = regionDomain.Id }, regionDto );
+
+        }
     }
 }
 
